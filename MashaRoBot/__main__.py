@@ -84,7 +84,7 @@ buttons = [
             text="ADD ME", url="t.me/Ameena_gbot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="About", callback_data="Masha_"),
+        InlineKeyboardButton(text="About", callback_data="masha_"),
         InlineKeyboardButton(text="𝙲𝚘𝚖𝚖𝚎𝚝𝚜", callback_data="help_back"),
     ],
     [
@@ -344,7 +344,7 @@ def help_button(update, context):
 @run_async
 def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "Masha_":
+    if query.data == "masha_":
         query.message.edit_text(
             text=""" (・_・;) I'm *𝙰𝚕𝚎𝚎𝚗𝚊*, a powerful group management bot , manage your group easily.
                  
@@ -694,7 +694,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"Masha_")
+    about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
