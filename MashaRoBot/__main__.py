@@ -75,7 +75,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 `Hellow My name is` *Ameena*
-`I'm here to help you to make your group managment task easier! TAP` *Commands* `Use buttons given below to know more about me.` 
+`I'm here to help you to make your group managment . please use *comments* button ,you can see my powerful Actions.` 
 """
 
 buttons = [
@@ -84,7 +84,7 @@ buttons = [
             text="ADD ME", url="t.me/Ameena_gbot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="𝙰𝚋𝚘𝚞𝚝", callback_data="Masha_"),
+        InlineKeyboardButton(text="About", callback_data="Masha_"),
         InlineKeyboardButton(text="𝙲𝚘𝚖𝚖𝚎𝚝𝚜", callback_data="help_back"),
     ],
     [
