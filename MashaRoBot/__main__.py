@@ -81,17 +81,17 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="ADD ME", url="t.me/Aleena_Gbot?startgroup=true"),
+            text="ADD ME", url="t.me/Ameena_gbot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ABOUT", callback_data="Masha_"),
-        InlineKeyboardButton(text="COMMANDS", callback_data="help_back"),
+        InlineKeyboardButton(text="𝙰𝚋𝚘𝚞𝚝", callback_data="Masha_"),
+        InlineKeyboardButton(text="𝙲𝚘𝚖𝚖𝚎𝚝𝚜", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="💾 DEV", callback_data="source_"),
+            text="𝙳𝚎𝚟𝚎𝚕𝚎𝚙𝚎𝚛", callback_data="source_"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/unitedbotsupport"
+            text="𝚂𝚞𝚙𝚙𝚘𝚛𝚝 💬", url="https://t.me/tgBotsChat"
         ),
     ],
 ]
@@ -346,22 +346,22 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *AleenA*, a powerful group management bot built to help you manage your group easily.
-                 ❍ I can restrict users.
-                 ❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 ❍ I have an advanced anti-flood system.
-                 ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 ❍ I check for admins' permissions before executing any command and more stuffs
+            text=""" (・_・;) I'm *𝙰𝚕𝚎𝚎𝚗𝚊*, a powerful group management bot , manage your group easily.
+                 🔻 I can help you to Increase your channel sub by forcing.
+                 🔻 I can greet users with customizable welcome messages and even set a group's rules.
+                 🔻 I have an advanced anti-flood system.
+                 🔻 I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 🔻 I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 🔻 I check for admins' permissions before executing any command and more stuffs
                  \n_Aleena's licensed under the GNU General Public License v3.0_
-                 Here is the [SUPPORT](https://t.me/tubots).
-                 If you have any question about Aleena, let us know at @tubots.""",
+                 Here is the [SUPPORT CHANNEL](https://t.me/Royalbotz).
+                 If you have any question about 𝙰𝚖𝚎𝚎𝚗𝚊, let us know at @tgbotschat.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="masha_back")
+                    InlineKeyboardButton(text="𝙱𝚊𝚌𝚔 ", callback_data="masha_back")
                  ]
                 ]
             ),
@@ -381,14 +381,14 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Aleena* THIS BOT CURRENTLY A CLOSED SOURCE CONATCT DEV FOR REPO
-                 \nHere is the [DEV](https://t.me/esto_420) .""",
+            text=""" Hi..😉 It is me *Ameena* THIS BOT Not A open SOURCE CONATCT DEV FOR REPO
+                 \nHere is the [DEV](https://t.me/haseebrb) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
+                    InlineKeyboardButton(text="𝙶𝚘 𝙱𝚊𝚌𝚔", callback_data="source_back")
                  ]
                 ]
             ),
@@ -417,7 +417,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help",
+                                text="𝙷𝚎𝚕𝚙",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
