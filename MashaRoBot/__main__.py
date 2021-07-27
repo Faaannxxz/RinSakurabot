@@ -1,4 +1,4 @@
-import importlib
+mport importlib
 import time
 import re
 from sys import argv
@@ -346,16 +346,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" (・_・;) I'm *𝙰𝚕𝚎𝚎𝚗𝚊*, a powerful group management bot , manage your group easily.
-                 
-                 🔻 I can help you to Increase your channel sub by forcing.          
-                 🔻 I have an advanced anti-flood system.
-                 🔻 I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 🔻 I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 🔻 I check for admins' permissions before executing any command and more stuffs
-                 \n_Aleena's licensed under the GNU General Public License v3.0_
-                 Here is the [SUPPORT CHANNEL](https://t.me/Royalbotz).
-                 If you have any question about 𝙰𝚖𝚎𝚎𝚗𝚊, let us know at @tgbotschat.""",
+            text=""" (・_・;) I'm *𝙰𝚕𝚎𝚎𝚗𝚊*, a powerful group management bot , manage your group easily.\n\n🔻 I can help you to Increase your channel sub by forcing\n🔻 I have an advanced anti-flood system.\n🔻 I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.\n🔻 I have a note keeping system, blacklists, and even predetermined replies on certain keywords.\n🔻 I check for admins' permissions before executing any command and more stuffs\n_Aleena's licensed under the GNU General Public License v3.0_\n\nHere is the [SUPPORT CHANNEL](https://t.me/Royalbotz).\nIf you have any question about 𝙰𝚖𝚎𝚎𝚗𝚊, let us know at @tgbotschat.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
