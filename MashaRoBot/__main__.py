@@ -74,27 +74,17 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow My name is` *Ameena*
+`Hellow My name is` *Astro*
 `I'm here to help you to make your group managment . please use *comments* button ,you can see my powerful Actions.` 
 """
 
-buttons = [
-    [
-        InlineKeyboardButton(
-            text="ADD ME", url="t.me/Ameena_gbot?startgroup=true"),
-    ],
-    [
-        InlineKeyboardButton(text="About", callback_data="masha_"),
-        InlineKeyboardButton(text="𝙲𝚘𝚖𝚖𝚎𝚝𝚜", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="𝙳𝚎𝚟𝚎𝚕𝚎𝚙𝚎𝚛", callback_data="source_"),
-        InlineKeyboardButton(
-            text="𝚂𝚞𝚙𝚙𝚘𝚛𝚝 💬", url="https://t.me/tgBotsChat"
-        ),
-    ],
-]
+buttons = [[
+            InlineKeyboardButton('𝚌𝚑𝚊𝚗𝚗𝚎𝚕🔗', url='https://t.me/Royalbotz'),
+            InlineKeyboardButton('𝚜𝚞𝚙𝚙𝚘𝚛𝚝👥', url ='https://t.me/tgbotschat')
+        ],[
+            
+            InlineKeyboardButton('𝙷𝚎𝚕𝚙 ⚠️', callback_data="help_back")
+        ]]
 
 
 HELP_STRINGS = """
@@ -187,7 +177,7 @@ def start(update: Update, context: CallbackContext):
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
                         [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
-                    ),
+                    ), 
                 )
 
             elif args[0].lower().startswith("stngs_"):
