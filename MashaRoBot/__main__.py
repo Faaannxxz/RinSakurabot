@@ -79,8 +79,8 @@ PM_START_TEXT = """
 """
 
 buttons = [[
-            InlineKeyboardButton('𝚌𝚑𝚊𝚗𝚗𝚎𝚕🔗', url='https://t.me/Royalbotz'),
-            InlineKeyboardButton('𝚜𝚞𝚙𝚙𝚘𝚛𝚝👥', url ='https://t.me/tgbotschat')
+            InlineKeyboardButton('𝚌𝚑𝚊𝚗𝚗𝚎𝚕🔗', url='https://t.me/Rd_botz'),
+            InlineKeyboardButton('𝙳𝙴𝚟', url ='https://t.me/Radin_x')
         ],[
             
             InlineKeyboardButton('𝙷𝚎𝚕𝚙 ⚠️', callback_data="help_back")
